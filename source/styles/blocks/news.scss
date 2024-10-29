@@ -1,0 +1,42 @@
+.news {
+  padding-bottom: 41px;
+
+  @media (min-width: $vp-1024) {
+    padding-bottom: 87px;
+  }
+}
+
+.news__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 18px;
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 38px;
+  }
+}
+
+.news__title {
+  line-height: 1.2em;
+}
+
+.news__title span {
+  display: inline-block;
+
+  @media (max-width: $vp-1023) {
+    display: none;
+  }
+}
+
+.news__link {
+  font-size: 16px;
+
+  @media (min-width: $vp-1024) {
+    font-size: 20px;
+  }
+}
+
+.news__pagination {
+  justify-content: center;
+}

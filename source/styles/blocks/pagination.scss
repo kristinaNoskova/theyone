@@ -1,0 +1,61 @@
+.pagination {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.pagination__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination__button {
+  padding: 0;
+  width: 5px;
+  height: 5px;
+  background-color: $color-mischka;
+  transition: background-color $trans-default, opacity $trans-default;
+
+  &:hover:not(.pagination__button-left):not(.pagination__button-right) {
+    background-color: $color-default-black;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.pagination__button--current {
+  background-color: $color-default-black;
+}
+
+.pagination__button-left,
+.pagination__button-right {
+  display: flex;
+  align-items: center;
+  width: 44px;
+  height: 21px;
+  background-color: transparent;
+
+  &::before {
+    @include mask(url("../../images/icons/stack.svg#arrow"), $color-default-black);
+    content: "";
+    display: block;
+    width: 44px;
+    height: 21px;
+    transition: opacity $trans-default;
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+}
+
+.pagination__button-left {
+  transform: rotate(-180deg);
+}

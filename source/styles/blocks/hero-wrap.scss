@@ -1,0 +1,41 @@
+.hero-wrap {
+  grid-column: 1;
+  grid-row: 1 / 3;
+}
+
+.hero-wrap__content {
+  position: relative;
+}
+
+.hero-wrap__content-video {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+
+  @media (min-width: $vp-1024) {
+    display: block;
+  }
+}
+
+.hero-wrap__content-icon {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  max-height: 700px;
+
+  @media (min-width: $vp-1024) {
+    bottom: -20vh;
+    z-index: 1;
+  }
+
+  @media (min-width: $vp-1280) {
+    bottom: -10vh;
+  }
+}
+
+.hero-wrap__content-icon img {
+  width: 100%;
+  object-fit: fill;
+}

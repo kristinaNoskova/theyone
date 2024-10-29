@@ -1,0 +1,11 @@
+.subtitle {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.subtitle--light {
+  @media (min-width: $vp-1024) {
+    color: $color-dark-gray;
+  }
+}

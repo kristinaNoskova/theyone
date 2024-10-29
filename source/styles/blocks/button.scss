@@ -1,0 +1,33 @@
+.button {
+  display: inline-block;
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 1.3em;
+  text-decoration: none;
+  text-align: center;
+  color: $color-black;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.button--primary {
+  padding: 10px 20px;
+  color: $color-default-white;
+  background-color: $color-han-purple;
+  transition: background-color $trans-default, color $trans-default;
+
+  &:hover:not(:disabled) {
+    background-color: $color-persian-indigo;
+  }
+
+  &:active {
+    background-color: $color-han-purple;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: default;
+  }
+}

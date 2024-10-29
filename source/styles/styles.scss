@@ -1,0 +1,34 @@
+/* GLOBAL */
+@import "./global/variables.scss";
+@import "./global/mixins.scss";
+@import "./global/global.scss";
+@import "./global/fonts.scss";
+@import "./global/container.scss";
+@import "./global/visually-hidden.scss";
+
+/* BLOCKS */
+@import "./blocks/title.scss";
+@import "./blocks/subtitle.scss";
+@import "./blocks/button.scss";
+@import "./blocks/descr.scss";
+@import "./blocks/input.scss";
+@import "./blocks/list-reset.scss";
+@import "./blocks/link.scss";
+@import "./blocks/wrapper-content.scss";
+@import "./blocks/hero-wrap.scss";
+@import "./blocks/main.scss";
+@import "./blocks/header.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/hero-list.scss";
+@import "./blocks/pagination.scss";
+@import "./blocks/team.scss";
+@import "./blocks/team-slider.scss";
+@import "./blocks/extra-services.scss";
+@import "./blocks/write.scss";
+@import "./blocks/services.scss";
+@import "./blocks/news.scss";
+@import "./blocks/news-list.scss";
+@import "./blocks/сontacts.scss";
+@import "./blocks/contact-form.scss";
+@import "./blocks/main-contact.scss";
+@import "./blocks/footer.scss";

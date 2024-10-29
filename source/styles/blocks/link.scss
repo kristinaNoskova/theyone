@@ -1,0 +1,45 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link--arrow {
+  display: grid;
+  grid-template-columns: minmax(auto, max-content) 32px;
+  align-items: center;
+  width: fit-content;
+  max-width: 60%;
+  gap: 6px;
+
+  &::after {
+    content: "";
+    grid-column: 2;
+    grid-row: 1;
+    display: block;
+    width: 23px;
+    height: 12px;
+    mask:
+      url("../../images/icons/stack.svg#arrow") no-repeat center
+      center;
+    background-color: $color-default-black;
+    transition: transform $trans-default, color $trans-default;
+  }
+
+  &:hover::after {
+    transform: scale(1.2) translateX(3px);
+    background-color: $color-paynes-grey;
+  }
+
+  &:hover {
+    color: $color-paynes-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-1024) {
+    max-width: 40%;
+  }
+}

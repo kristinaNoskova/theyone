@@ -1,0 +1,31 @@
+$primary-font: "KharkivTone", "Arial", sans-serif;
+$secondary-font: "Montserrat", "Arial", sans-serif;
+
+//colors
+$color-default-black: #000000;
+$color-default-white: #ffffff;
+$color-transparent: rgba(255, 255, 255, 0);
+$color-dark-gray: #b0b0b0;
+$color-black:#100b0b;
+$color-black-pearl:#081018;
+$color-paynes-grey: #404041;
+$color-link-water: #d4d8dd;
+$color-mischka: #abadb4;
+$color-han-purple: #4200ff;
+$color-persian-indigo: #2e147a;
+$color-whisper: #eaeaea;
+$color-grey: #818181;
+
+//viewports
+$vp-375: 375px;
+$vp-768: 768px;
+$vp-1023: 1023px;
+$vp-1024: 1024px;
+$vp-1280: 1280px;
+$vp-1440: 1440px;
+$vp-1600: 1600px;
+$vp-1700: 1700px;
+
+//Animation
+$tf-default: cubic-bezier(0.45, 0.05, 0.55, 0.95);
+$trans-default: 0.3s $tf-default;
